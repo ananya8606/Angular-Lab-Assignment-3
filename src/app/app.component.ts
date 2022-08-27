@@ -20,6 +20,8 @@ export class AppComponent {
     alert("Select an option !!");
     if(!result.Category)
     alert("Select Category !!");
+    if(!result.Availability)
+    alert("Select Product availability!!");
     console.log("Product ID: "+result.ID+", Product Name: "+result.Name+", Product Cost: "+result.Cost+", Product Online: "+result.Online+", Product Category: "+result.Category); 
  }
 }
