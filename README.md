@@ -1,5 +1,8 @@
 # LabAssignmentAngular3
 
+https://user-images.githubusercontent.com/52853286/187018972-1f020f49-7369-435a-a76b-2ba9b796a7c1.mp4
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
 ## Development server
