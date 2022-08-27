@@ -9,7 +9,17 @@ export class AppComponent {
   doAction(event:any){
     console.log("Available in Store: "+event.target.value);
   }  
-  onClickSubmit(result:any) {
+  onClickSubmit(result:any):any {
+    if(!result.ID)
+    alert("ID is required !!");
+    if(!result.Name)
+    alert("Name is required !!");
+    if(!result.Cost)
+    alert("Cost is required !!");
+    if(!result.Online)
+    alert("Select an option !!");
+    if(!result.Category)
+    alert("Select Category !!");
     console.log("Product ID: "+result.ID+", Product Name: "+result.Name+", Product Cost: "+result.Cost+", Product Online: "+result.Online+", Product Category: "+result.Category); 
  }
 }
