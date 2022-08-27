@@ -1,0 +1,18 @@
+<form #userName="ngForm" (ngSubmit)="onClickSubmit(userName.value)"> 
+  <table>
+  <tr>
+  <td><label for="Product ID">Product ID</label></td><td><input type="number" name="ID" placeholder="" ngModel></td></tr>
+  <tr><td><label for="Product Name">Product Name</label></td><td><input type="text" name="Name" placeholder="" ngModel></td></tr> 
+  <tr><td><label for="Product Cost">Product Cost</label></td><td><input type="number" name="Cost" placeholder="" ngModel></td></tr> 
+  <tr><td><label for="Product Online">Product Online</label></td><td><input type="radio" value="yes" name="Online" placeholder="" ngModel>Yes<input type="radio" value="no" name="Online" placeholder="" ngModel>No</td></tr>
+  <tr><td aria-rowspan="4"><label for="Product Category">Product Category</label></td><td><select name="Category" ngModel>
+    <option value="">
+    <option value="Grocery">Grocery</option>
+    <option value="Mobile">Mobile</option>
+    <option value="Electronics">Electronics</option>
+    <option value="Clothes">Clothes</option>
+    </select></td></tr> 
+  <tr><td><label for="Available in Store">Available in Store</label></td><td><input type="checkbox" name="Availability"  (click)="doAction($event)" value="Big Bazar" placeholder="" ngModel> Big Bazar&nbsp;<input type="checkbox" name="Availability" (click)="doAction($event)" value="DMart" placeholder="" ngModel>DMart&nbsp;<input type="checkbox" name="Availability" (click)="doAction($event)"  value="Reliance" placeholder="" ngModel>Reliance&nbsp;<input type="checkbox" name="Availability"  (click)="doAction($event)" value="Mega Store" placeholder="" ngModel>Mega store</td></tr>   
+</table>
+  <button type="submit">Add Product</button> 
+</form>
